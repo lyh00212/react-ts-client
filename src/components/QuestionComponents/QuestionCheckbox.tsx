@@ -31,7 +31,7 @@ const QuestionCheckbox: FC<PropsType> = ({ fe_id, props }) => {
             setSelectedValues(selectedValues => selectedValues.filter(v => v !== value))
         } else {
             // 未被选中，则增加选择
-            setSelectedValues(selectedValues.concat(value))
+            setSelectedValues(selectedValues => selectedValues.concat(value))
         }
     }
     return (
